@@ -1,0 +1,152 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<title>reveal.js</title>
+
+		<link rel="stylesheet" href="dist/reset.css">
+		<link rel="stylesheet" href="dist/reveal.css">
+		<link rel="stylesheet" href="dist/theme/white.css">
+
+		<!-- Theme used for syntax highlighted code -->
+		<link rel="stylesheet" href="plugin/highlight/monokai.css">
+		<link rel="stylesheet" href="plugin/title-footer/title-footer.css">
+
+	<body>
+		<div class="reveal">
+			<div class="slides">
+				<section id="titleSlide">
+					<h2> Modern Programming for Data Analytics - Course Overview </h2>
+					<h4> Instructor: Shawn T. Brown </h4>
+				</section>
+				<section>
+					<section>
+						<h3>Course Syllabus is on GitHub at:</h3>
+						<p>
+							<a href="https://github.com/CMU-MS-DAS-Modern-Programming-Mini/Syllabus" target="_blank">
+								https://github.com/CMU-MS-DAS-Modern-Programming-Mini/Syllabus
+							</a>
+						</p>
+					</section>
+					<section>
+						<h2>The Goals of the Course</h2>
+						<ul class="r-fit-text">
+							<li>Be able to, given a task in data analytics, be able to pick the right algorithm and apply Python tools to solve the task.
+							<li>Gain insight into the process of how Python and Python-based tools work and can be applied properly for data analytics.
+							<li>Be able to apply the techniques learned in the class to be able to manipulate, process, and manage data sets from small and simple to large and complex.
+							<li>Be able to present their software and develop effective software packages in Python within a team development environment.
+						</ul>
+					</section>
+					<section>
+						<h2> Topics we will try to cover: </h2>
+						<ul class="r-fit-text">
+							<li>Brief introduction to Python3 and the development ecosystem
+							<li>Introduction to object-oriented and procedural programming models and basic software architecture principles
+							<li>Professional programming techniques for modern software development: version control and team development (Git and GitHub), coding standards, unit and regression testing (PyTest) and continuous integration (TravisCI)
+							<li>Introduction to R and RStudio
+							<li>Developing reusable, sharable, and interactive electronic notebooks with Jupyter
+							<li>Python environment management: Virtualenv and Anaconda
+							<li>Fundamentals of data structures and their implementation in Python
+							<li>Python packages for science and data science: NumPy, SciPy, Pandas, StatsModels
+							<li>Data processing techniques for small, medium and large datasets
+							<li>Manual and programmatic metadata standards
+							<li>Data Analytics with Python: Optimization, Linear and Non-Linear Regression, Mathematical Modeling, Monte Carlo Sampling, Distributions, and Clustering
+						</ul>
+					</section>
+					<section>
+						<h2> Assignments and Grading </h2>
+						<p class="r-fit-text">There will be 3 programming assignnemts throughout the mini semester and a final project</p>
+						<ul class="r-fit-text">
+							<li>Each programming assignment will be 20% of grade
+								<ul>
+									<li> All assighments will be submitted through GitHub, specific instructions will be given with the assignment
+									<li> All assignments will be due 7 days after the assignment is given, 3% points will be deducted every day that the assignment is template
+								</ul>
+							<li>Final Project will be 40% of the grade
+								<ul>
+									<li> The final project will include a code walkthrough in-class presentation </li>
+								</ul>
+							</ul>		  
+				</section>
+			</section>
+
+			<section>
+				<section>
+					<h2> How will we interact? </h2>
+					We will attempt to do as much interaction in the class through GitHub
+					</section>
+					<section>
+						<h3>GitHub is is a web-platform that:</h3>
+						<ul>
+						 <li>Provides software developers a place to interact
+						 <li>Provides a place to share version contolled code
+						 <li>Provides a place to manage software release and distribution
+						</ul>
+					</section>
+					<section>
+						<h3>Getting a GitHub account (if you don't already have a GitHub account):</h3>
+						<ol>
+							<li>Go to <a href="github.com" target="_blank">github.com</a>
+							<li>Click "Sign Up" at the top right
+							<li>Go through the process
+							<li>Send your GitHub user name to <a href="mailto:stbrown@andrew.cmu.edu">stbrown@andrew.cmu.edu</a>
+						</ol>
+					</section>
+					<section>
+						<h3> GitHub Organization </h3>
+						<p>
+							Created an Organization on Github called:
+							<a href="https://github.com/CMU-MS-DAS-Modern-Programming-Mini" target="_blank">
+									CMU-MS-DAS-Modern-Programming-Mini
+							</a>
+						</p>
+						<p>
+						The organization allows us to group all of the materials and work done for the class
+						</p>
+					</section>
+					<section>
+						<h3> GitHub Team </h3>
+						<p>
+							We can add teams to the GitHub Organization that allows us to control groups of developers.
+						</p>
+						<p>
+							Can see our current teams at
+							<a href="https://github.com/orgs/CMU-MS-DAS-Modern-Programming-Mini/teams" target="_blank">
+								https://github.com/orgs/CMU-MS-DAS-Modern-Programming-Mini/teams
+							</a>
+						<p>
+						We currently have a team called "Class-2021"", which I will make all of you a member once you send me your github account.
+						</p>
+					</section>
+					<section>
+						<h2> General Help with the course</h2>
+						<p> Once you are in our GitHub organziation, you will gain access so the Syllabus repository</p>
+						<p> You can ask questions throug the
+							<a href = "https://github.com/CMU-MS-DAS-Modern-Programming-Mini/Syllabus/issues" target="_blank">
+								**Issues** page
+							</a>
+						</p>
+					</section>
+				</section>
+			</div>
+		</div>
+
+		<script src="dist/reveal.js"></script>
+		<script src="plugin/notes/notes.js"></script>
+		<script src="plugin/markdown/markdown.js"></script>
+		<script src="plugin/highlight/highlight.js"></script>
+		<script>
+			// More info about initialization & config:
+			// - https://revealjs.com/initialization/
+			// - https://revealjs.com/config/
+			Reveal.initialize({
+				hash: true,
+				dependencies: [{src: 'plugin/title-footer/title-footer.js', async: true, callback: function() { title_footer.initialize(); }}],
+				// Learn about plugins: https://revealjs.com/plugins/
+				plugins: [ RevealMarkdown, RevealHighlight, RevealNotes ]
+			});
+		</script>
+	</body>
+</html>
